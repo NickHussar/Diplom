@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FindPhone</title>
+    <link rel="icon" type="image/icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700|Roboto:400,700&subset=cyrillic" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <button class="burger">
+        <img src="images/ic_menu_white_24px.svg">
+      </button>
+      <div class="logo">
+        <img src="images/ic_logo_white.svg">
+      </div>
+    </header>
+    <div class="sidebar">
+      <nav>
+        <dl>
+          <dt class="brand">Brand</dt>
+            <div class="brand_list">
+              <dd><input type="checkbox" name="apple" id="apple"><label for="apple">Apple</label></dd>
+              <dd><input type="checkbox" name="samsung" id="samsung"><label for="samsung">Samsung</label></dd>
+              <dd><input type="checkbox" name="lg" id="lg"><label for="lg">LG</label></dd>
+              <dd><input type="checkbox" name="htc" id="htc"><label for="htc">HTC</label></dd>
+              <dd><input type="checkbox" name="lenovo" id="lenovo"><label for="lenovo">Lenovo</label></dd>
+              <dd><input type="checkbox" name="huawei" id="huawei"><label for="huawei">Huawei</label></dd>
+              <dd><input type="checkbox" name="meizu" id="meizu"><label for="meizu">Meizu</label></dd>
+              <dd><input type="checkbox" name="oneplus" id="oneplus"><label for="oneplus">OnePlus</label></dd>
+              <dd><input type="checkbox" name="sony" id="sony"><label for="sony">Sony</label></dd>
+              <dd><input type="checkbox" name="xiaomi" id="xiaomi"><label for="xiaomi">Xiaomi</label></dd>
+              <dd><input type="checkbox" name="zte" id="zte"><label for="zte">ZTE</label></dd>
+              <dd><input type="checkbox" name="fly" id="fly"><label for="fly">Fly</label></dd>
+              <dd><input type="checkbox" name="asus" id="asus"><label for="asus">Asus</label></dd>
+              <dd><input type="checkbox" name="acer" id="acer"><label for="acer">Acer</label></dd>
+              <dd><input type="checkbox" name="alcatel" id="altatel"><label for="alcatel">Alcatel</label></dd>
+            </div>
+        </dl>
+        <dl>
+          <dt class="screen">Screen size</dt>
+            <div>
+              <dd><label><input type="range" name="screen_size"></label></dd>
+            </div>
+        </dl>
+      </nav>
+    </div>
+    <div class="grey"></div>
+    <script type="text/javascript">
+      $('.burger')
+        .on("click", function() {
+          $('.sidebar').toggleClass ( "sidebar-active" );
+          $('.grey').toggleClass ( "grey-active" );
+      });
+    </script>
+    <script type="text/javascript">
+      $('.brand')
+        .on("click", function() {
+          $('.brandlist').css ();
+        })
+    </script>
+  </body>
+</html>
