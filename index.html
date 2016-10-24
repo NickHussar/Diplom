@@ -5,96 +5,36 @@
     <title>FindPhone</title>
     <link rel="icon" type="image/icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   </head>
   <body>
     <header>
       <button class="burger">
-        <img src="images/ic_menu_white_24px.svg">
+        <img src="images/ic_menu_grey_24px.svg">
       </button>
       <div class="logo">
-        <img src="images/ic_logo_white.svg">
+        <img src="images/ic_logo_grey.svg">
       </div>
     </header>
-    <div class="sidebar">
-      <nav>
-        <dl>
-          <dt class="side-brand">Brand</dt>
-            <div class="brand_list">
-              <dd><input type="checkbox" name="apple" id="apple"><label for="apple">Apple</label></dd>
-              <dd><input type="checkbox" name="samsung" id="samsung"><label for="samsung">Samsung</label></dd>
-              <dd><input type="checkbox" name="lg" id="lg"><label for="lg">LG</label></dd>
-              <dd><input type="checkbox" name="htc" id="htc"><label for="htc">HTC</label></dd>
-              <dd><input type="checkbox" name="lenovo" id="lenovo"><label for="lenovo">Lenovo</label></dd>
-              <dd><input type="checkbox" name="huawei" id="huawei"><label for="huawei">Huawei</label></dd>
-              <dd><input type="checkbox" name="meizu" id="meizu"><label for="meizu">Meizu</label></dd>
-              <dd><input type="checkbox" name="oneplus" id="oneplus"><label for="oneplus">OnePlus</label></dd>
-              <dd><input type="checkbox" name="sony" id="sony"><label for="sony">Sony</label></dd>
-              <dd><input type="checkbox" name="xiaomi" id="xiaomi"><label for="xiaomi">Xiaomi</label></dd>
-              <dd><input type="checkbox" name="zte" id="zte"><label for="zte">ZTE</label></dd>
-              <dd><input type="checkbox" name="fly" id="fly"><label for="fly">Fly</label></dd>
-              <dd><input type="checkbox" name="asus" id="asus"><label for="asus">Asus</label></dd>
-              <dd><input type="checkbox" name="acer" id="acer"><label for="acer">Acer</label></dd>
-              <dd><input type="checkbox" name="alcatel" id="altatel"><label for="alcatel">Alcatel</label></dd>
-            </div>
-        </dl>
-        <dl>
-          <dt class="side-screen">Screen size</dt>
-            <div>
-              <dd><label><input type="range" name="screen_size"></label></dd>
-            </div>
-        </dl>
-        <dl>
-          <dt class="side-systems">Operating system</dt>
-            <div>
-              <dd><input type="checkbox" name="ios" id="ios"><label for="ios">iOS</label></dd>
-              <dd><input type="checkbox" name="android" id="android"><label for="android">Android</label></dd>
-              <dd><input type="checkbox" name="windows" id="windows"><label for="windows">Windows</label></dd>
-            </div>
-        </dl>
-        <dl>
-          <dt class="side-cores">Number of cores</dt>
-            <div>
-              <dd><input type="checkbox" name="1" id="c1"><label for="c1">1</label></dd>
-              <dd><input type="checkbox" name="2" id="c2"><label for="c2">2</label></dd>
-              <dd><input type="checkbox" name="4" id="c4"><label for="c4">4</label></dd>
-              <dd><input type="checkbox" name="6" id="c6"><label for="c6">6</label></dd>
-              <dd><input type="checkbox" name="8" id="c8"><label for="c8">8</label></dd>
-              <dd><input type="checkbox" name="10" id="c10"><label for="c10">10</label></dd>
-            </div>
-        </dl>
-        <dl>
-          <dt class="side-4g">4G (LTE) support</dt>
-            <div>
-              <dd><input type="checkbox" name="yes" id="4g_yes"><label for="4g_yes">Yes</label></dd>
-              <dd><input type="checkbox" name="no" id="4g_no"><label for="4g_no">No</label></dd>
-            </div>
-        </dl>
-        <dl>
-          <dt class="side-gps">GPS support</dt>
-            <div>
-              <dd><input type="checkbox" name="yes" id="gps_yes"><label for="gps_yes">Yes</label></dd>
-              <dd><input type="checkbox" name="no" id="gps_no"><label for="gps_no">No</label></dd>
-            </div>
-        </dl>
-        <dl>
-          <dt class="side-sim">Number of SIM-cards</dt>
-            <div>
-              <dd><input type="checkbox" name="1" id="sim1"><label for="sim1">1 SIM</label></dd>
-              <dd><input type="checkbox" name="1+" id="sim1+"><label for="sim1+">1 SIM + SIM or <br>Memory</label></dd>
-              <dd><input type="checkbox" name="3" id="sim2"><label for="sim2">2 SIM</label></dd>
-            </div>
-        </dl>
-        <dl>
-          <dt class="side-mem">Memory cards support</dt>
-            <div>
-              <dd><input type="checkbox" name="yes" id="mem_yes"><label for="mem_yes">Yes</label></dd>
-              <dd><input type="checkbox" name="no" id="mem_no"><label for="mem_no">No</label></dd>
-            </div>
-        </dl>
-      </nav>
+    <div class="sidebar noselect">
+      <ul>
+        <span class="sb-h">Brands</span>
+        <li>
+          <input id="sb-apple" type="checkbox" name="1">
+          <label for="sb-apple">Apple</label>
+        </li>
+        <li>
+          <input id="sb-samsung" type="checkbox" name="2">
+          <label for="sb-samsung">Samsung</label>
+        </li>
+        <li>
+          <input id="sb-google" type="checkbox" name="3">
+          <label for="sb-google">Google</label>
+        </li>
+      </ul>
     </div>
+    <div class="grey"></div>
     <div class="main-block">
       <div class="brands">
         <p class="main-text">Brands</p>
@@ -112,7 +52,7 @@
         <p class="main-text">RAM</p>
       </div>
     </div>
-    <div class="grey">
+    <div class="content">
     </div>
     <script type="text/javascript">
       $('.burger')
@@ -128,7 +68,20 @@
         })
     </script>
     <script type="text/javascript">
+      $(window).on('scroll', function() {
+        var y_scroll = window.pageYOffset;
+        var top_scroll = 10;
 
+        if (y_scroll > top_scroll) {
+          $('header').css (
+            'box-shadow', '0 2px 5px rgba(0, 0, 0, 0.2)'
+          )
+        } else {
+          $('header').css (
+            'box-shadow', 'none'
+          )
+        }
+      });
     </script>
   </body>
 </html>
