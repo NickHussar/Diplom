@@ -5,7 +5,7 @@
     <title>FindPhone</title>
     <link rel="icon" type="image/icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700|Roboto:400,700&subset=cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   </head>
   <body>
@@ -20,7 +20,7 @@
     <div class="sidebar">
       <nav>
         <dl>
-          <dt class="brand">Brand</dt>
+          <dt class="side-brand">Brand</dt>
             <div class="brand_list">
               <dd><input type="checkbox" name="apple" id="apple"><label for="apple">Apple</label></dd>
               <dd><input type="checkbox" name="samsung" id="samsung"><label for="samsung">Samsung</label></dd>
@@ -40,13 +40,13 @@
             </div>
         </dl>
         <dl>
-          <dt class="screen">Screen size</dt>
+          <dt class="side-screen">Screen size</dt>
             <div>
               <dd><label><input type="range" name="screen_size"></label></dd>
             </div>
         </dl>
         <dl>
-          <dt class="system">Operating system</dt>
+          <dt class="side-systems">Operating system</dt>
             <div>
               <dd><input type="checkbox" name="ios" id="ios"><label for="ios">iOS</label></dd>
               <dd><input type="checkbox" name="android" id="android"><label for="android">Android</label></dd>
@@ -54,7 +54,7 @@
             </div>
         </dl>
         <dl>
-          <dt class="cores">Number of cores</dt>
+          <dt class="side-cores">Number of cores</dt>
             <div>
               <dd><input type="checkbox" name="1" id="c1"><label for="c1">1</label></dd>
               <dd><input type="checkbox" name="2" id="c2"><label for="c2">2</label></dd>
@@ -65,21 +65,21 @@
             </div>
         </dl>
         <dl>
-          <dt class="4g">4G (LTE) support</dt>
+          <dt class="side-4g">4G (LTE) support</dt>
             <div>
               <dd><input type="checkbox" name="yes" id="4g_yes"><label for="4g_yes">Yes</label></dd>
               <dd><input type="checkbox" name="no" id="4g_no"><label for="4g_no">No</label></dd>
             </div>
         </dl>
         <dl>
-          <dt class="gps">GPS support</dt>
+          <dt class="side-gps">GPS support</dt>
             <div>
               <dd><input type="checkbox" name="yes" id="gps_yes"><label for="gps_yes">Yes</label></dd>
               <dd><input type="checkbox" name="no" id="gps_no"><label for="gps_no">No</label></dd>
             </div>
         </dl>
         <dl>
-          <dt class="gps">Number of SIM-cards</dt>
+          <dt class="side-sim">Number of SIM-cards</dt>
             <div>
               <dd><input type="checkbox" name="1" id="sim1"><label for="sim1">1 SIM</label></dd>
               <dd><input type="checkbox" name="1+" id="sim1+"><label for="sim1+">1 SIM + SIM or <br>Memory</label></dd>
@@ -87,7 +87,7 @@
             </div>
         </dl>
         <dl>
-          <dt class="gps">Memory cards support</dt>
+          <dt class="side-mem">Memory cards support</dt>
             <div>
               <dd><input type="checkbox" name="yes" id="mem_yes"><label for="mem_yes">Yes</label></dd>
               <dd><input type="checkbox" name="no" id="mem_no"><label for="mem_no">No</label></dd>
@@ -95,7 +95,25 @@
         </dl>
       </nav>
     </div>
-    <div class="grey"></div>
+    <div class="main-block">
+      <div class="brands">
+        <p class="main-text">Brands</p>
+      </div>
+      <div class="systems">
+        <p class="main-text">OS's</p>
+      </div>
+      <div class="screen">
+        <p class="main-text">Screen size</p>
+      </div>
+      <div class="cores">
+        <p class="main-text">Cores</p>
+      </div>
+      <div class="ram">
+        <p class="main-text">RAM</p>
+      </div>
+    </div>
+    <div class="grey">
+    </div>
     <script type="text/javascript">
       $('.burger')
         .on("click", function() {
@@ -108,6 +126,9 @@
         .on("click", function() {
           $('.brandlist').css ();
         })
+    </script>
+    <script type="text/javascript">
+
     </script>
   </body>
 </html>

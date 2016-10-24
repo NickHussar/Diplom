@@ -5,16 +5,18 @@
 
 body {
   height: 100%;
+  padding-top: 50px;
 }
 header {
   position: absolute;
+  margin-top: -50px;
   z-index: 10;
   width: 100%;
   height: 50px;
   display: flex;
   align-items: center;
   background-color: #1565c0;
-  box-shadow: 0px 2px 5px #9E9E9E;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 header .burger {
@@ -36,34 +38,19 @@ header .logo img {
   height: 30px;
 }
 
-.grey {
-  transition-duration: 0.5s;
-  opacity: 0;
-  top: 0;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 8;
-}
-
-.grey-active {
-  opacity: 1;
-}
-
 .sidebar {
   overflow-y: scroll;
   position: fixed;
-  padding: 50px 0px 20px 20px;
+  padding: 0 0 20px 20px;
   transition-duration: 0.5s;
   transform: translateX(-275px);
   z-index: 9;
   width: 250px;
   height: calc(100% - 70px);
   font-size: 20px;
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #EEE;
-  box-shadow: 2px 0px 5px #9E9E9E;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 .sidebar *::selection {
@@ -105,4 +92,59 @@ input[type='checkbox'] + label {
 
 input[type='checkbox']:checked + label {
   background-image: url(../images/checkbox_cheked.png);
+}
+
+.grey {
+  transition-duration: 0.5s;
+  opacity: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 8;
+}
+
+.grey-active {
+  opacity: 1;
+}
+
+.main-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-block div {
+  height: 150px;
+  width: 100%;
+  padding: 20px;
+}
+
+.brands {
+  background-color: #F44336;
+}
+
+.systems {
+  background-color: #3F51B5;
+}
+
+.screen {
+  background-color: #4CAF50;
+}
+
+.cores {
+  background-color: #009688;
+}
+
+.ram {
+  background-color: #FFC107;
+}
+
+.main-text {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 3vw;
+  font-weight: 700;
+  font-family: "Roboto", "Arial", sans-serif;
 }
