@@ -5,8 +5,13 @@
     <title>FindPhone</title>
     <link rel="icon" type="image/icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/jquery-ui.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/burger.js" async></script>
+    <script src="js/slider-range.js" async></script>
+    <script src="js/top-scroll.js" async></script>
   </head>
   <body>
     <header>
@@ -33,6 +38,10 @@
           <label for="sb-google">Google</label>
         </li>
       </ul>
+      <p>
+        <label class="sb-h" for="amount">Screen size:</label>
+      </p>
+      <div id="slider-range"></div>
     </div>
     <div class="grey"></div>
     <div class="main-block">
@@ -55,33 +64,10 @@
     <div class="content">
     </div>
     <script type="text/javascript">
-      $('.burger')
-        .on("click", function() {
-          $('.sidebar').toggleClass ( "sidebar-active" );
-          $('.grey').toggleClass ( "grey-active" );
-      });
-    </script>
-    <script type="text/javascript">
       $('.brand')
-        .on("click", function() {
+        .on ( "click", function () {
           $('.brandlist').css ();
         })
-    </script>
-    <script type="text/javascript">
-      $(window).on('scroll', function() {
-        var y_scroll = window.pageYOffset;
-        var top_scroll = 10;
-
-        if (y_scroll > top_scroll) {
-          $('header').css (
-            'box-shadow', '0 2px 5px rgba(0, 0, 0, 0.2)'
-          )
-        } else {
-          $('header').css (
-            'box-shadow', 'none'
-          )
-        }
-      });
     </script>
   </body>
 </html>

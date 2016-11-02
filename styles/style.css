@@ -100,17 +100,16 @@ header .logo img {
 
 .grey {
   transition-duration: 0.5s;
-  opacity: 0;
+  display: none;
   top: 0;
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
   z-index: 8;
 }
 
 .grey-active {
-  opacity: 1;
+  display: block;
 }
 
 .main-block {
