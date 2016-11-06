@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+*::selection {
+  background-color: #FF6F00;
+  color: #FFE57F;
+}
+
 body {
   height: 100%;
   padding-top: 50px;
@@ -24,7 +29,6 @@ header {
   height: 50px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #9E9E9E;
   background-color: #FFF;
 }
 
@@ -41,6 +45,13 @@ header .logo {
   width: 50px;
   justify-content: space-around;
   display: flex;
+  cursor: pointer;
+  filter: grayscale(1);
+  transition-duration: 0.3s;
+}
+
+header .logo:hover {
+  filter: grayscale(0);
 }
 
 header .logo img {
@@ -60,7 +71,6 @@ header .logo img {
   font-family: 'Roboto', sans-serif;
   background-color: #FFF;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
-  border-top: 1px solid #9E9E9E;
 }
 
 .sidebar *::selection {
@@ -112,29 +122,23 @@ header .logo img {
   display: block;
 }
 
-.main-block {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.main-block div {
-  height: 150px;
-  width: 100%;
-  padding: 20px;
-  background-color: #9E9E9E;
-}
-
-.main-text {
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 3vw;
-  font-weight: 700;
-  font-family: "Roboto", "Arial", sans-serif;
-}
-
 .content {
   height: 2000px;
   width: 100%;
-  background-color: #9E9E9E;
+  background-color: #EEEEEE;
+}
+
+.main-image {
+  height: 500px;
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.main-image h1 {
+  padding: 50px 0 0 50px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100px;
 }
