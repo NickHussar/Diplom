@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FindPhone</title>
+    <link rel="icon" type="image/icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="styles/phones_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/burger.js" async></script>
+    <script src="js/slider-range.js" async></script>
+    <script src="js/top-scroll.js" async></script>
+    <script src="js/sorting.js" async></script>
+  </head>
+  <body>
+    <header>
+      <button class="burger button">
+        <img src="images/ic_menu.svg">
+      </button>
+      <div class="logo">
+        <img class="logo-img" src="images/ic_logo.svg">
+      </div>
+    </header>
+    <div class="sidebar noselect">
+      <ul>
+        <span class="sb-h">Brands</span>
+        <li>
+          <input id="sb-apple" type="checkbox" name="1">
+          <label for="sb-apple">Apple</label>
+        </li>
+        <li>
+          <input id="sb-samsung" type="checkbox" name="2">
+          <label for="sb-samsung">Samsung</label>
+        </li>
+        <li>
+          <input id="sb-google" type="checkbox" name="3">
+          <label for="sb-google">Google</label>
+        </li>
+      </ul>
+      <p>
+        <label class="sb-h" for="amount">Screen size:</label>
+        <input type="text" id="amount" readonly style="border:0; color:#009688;">
+      </p>
+      <div id="slider-range"></div>
+    </div>
+    <div class="grey"></div>
+    <div class="content">
+      <div class="sorting">
+        <div class="sort">
+          <button class="button">
+            <img src="images/ic_sort_by_alpha.svg">
+          </button>
+          <!-- <ul>
+            <li>A - Z</li>
+            <li>Z - A</li>
+          </ul> -->
+          <button class="button">
+            <img src="images/ic_sort_by_date.svg">
+          </button>
+          <!-- <ul>
+            <li>New - Old</li>
+            <li>Old - New</li>
+          </ul> -->
+        </div>
+        <div class="sort-type">
+          <button class="button button-column">
+            <img src="images/ic_view_list.svg">
+          </button>
+          <button class="button button-row button-active">
+            <img src="images/ic_view_module.svg">
+          </button>
+        </div>
+      </div>
+      <div id="goods"class="goods-row">
+        <div id="element" class="element-row">
+          <img src="images/phones/nexus_5x_small.png">
+          <div>
+            <h3>LG Nexus 5X</h3>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div id="element" class="element-row">
+          <img src="images/phones/nexus_6p_small.png">
+          <div>
+            <h3>Huawei Nexus 6P</h3>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div id="element" class="element-row">
+          <img src="images/phones/pixel_small.png">
+          <div>
+            <h3>Google Pixel</h3>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div id="element" class="element-row">
+          <img src="images/phones/pixel_xl_small.png">
+          <div>
+            <h3>Google Pixel XL</h3>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div id="element" class="element-row">
+          <img src="images/phones/pixel_xl_small.png">
+          <div>
+            <h3>Google Pixel XL</h3>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div id="element" class="element-row">
+          <img src="images/phones/pixel_xl_small.png">
+          <div>
+            <h3>Google Pixel XL</h3>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div id="element" class="element-row">
+          <img src="images/phones/pixel_xl_small.png">
+          <div>
+            <h3>Google Pixel XL</h3>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div id="element" class="element-row">
+          <img src="images/phones/pixel_xl_small.png">
+          <div>
+            <h3>Google Pixel XL</h3>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div id="element" class="element-row">
+          <img src="images/phones/pixel_xl_small.png">
+          <div>
+            <h3>Google Pixel XL</h3>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div id="element" class="element-row">
+          <img src="images/phones/pixel_xl_small.png">
+          <div>
+            <h3>Google Pixel XL</h3>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div id="element" class="element-row">
+          <img src="images/phones/pixel_xl_small.png">
+          <div>
+            <h3>Google Pixel XL</h3>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div id="element" class="element-row">
+          <img src="images/phones/pixel_xl_small.png">
+          <div>
+            <h3>Google Pixel XL</h3>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div id="element" class="element-row">
+          <img src="images/phones/pixel_xl_small.png">
+          <div>
+            <h3>Google Pixel XL</h3>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div id="element" class="element-row">
+          <img src="images/phones/pixel_xl_small.png">
+          <div>
+            <h3>Google Pixel XL</h3>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div id="element" class="element-row">
+          <img src="images/phones/pixel_xl_small.png">
+          <div>
+            <h3>Google Pixel XL</h3>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+
+    </footer>
+    <script type="text/javascript">
+      $('.brand')
+        .on ( "click", function () {
+          $('.brandlist').css ();
+        })
+    </script>
+  </body>
+</html>

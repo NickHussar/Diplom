@@ -11,18 +11,24 @@
 body {
   height: 100%;
   padding-top: 50px;
+  background-color: #EEEEEE;
 }
 
 li {
   list-style: none;
 }
 
-h1 {
-  color: #FFF;
+h2 {
+  color: #009688;
   font-family: 'Roboto', sans-serif;
-  font-size: 80px;
+  font-size: 30px;
 }
 
+h3 {
+  color: #009688;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
 p {
   color: #000;
   font-family: 'Roboto', sans-serif;
@@ -33,7 +39,6 @@ p {
 }
 
 .button {
-  margin: 0 10px 0 10px;
   height: 24px;
   cursor: pointer;
   border: 0;
@@ -41,11 +46,9 @@ p {
   background: none;
   filter: grayscale(1);
 }
-
 .button-active {
   filter: grayscale(0);
 }
-
 header {
   position: fixed;
   margin-top: -50px;
@@ -66,6 +69,9 @@ header .logo {
   transition-duration: 0.3s;
 }
 
+header .burger {
+  margin: 0 10px 0 10px;
+}
 header .logo:hover {
   filter: grayscale(0);
 }
@@ -139,15 +145,74 @@ header .logo-img {
 }
 
 .content {
-  height: 2000px;
-  width: 100%;
-  background-color: #EEEEEE;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 70%;
 }
 
-.main-image {
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #FFF;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.goods-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.goods-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.element-column {
+  cursor: pointer;
+  background-color: #FFF;
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  margin: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.element-row {
+  cursor: pointer;
+  background-color: #FFF;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 170px;
+  height: 200px;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.element-row img {
+  margin: 0 auto;
+  display: block;
+  height: 150px;
+}
+.element-column img {
+  display: block;
+  height: 150px;
+}
+
+footer {
+  background-color: #757575;
   height: 500px;
-  background-image: url('../images/background.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  width: 100%;
+  margin-top: 20px;
 }
