@@ -85,14 +85,13 @@ header .logo-img {
 }
 
 .sidebar {
-  overflow-y: scroll;
   position: fixed;
   padding: 15px 0 20px 20px;
   transition-duration: 0.5s;
   transform: translateX(-275px);
   z-index: 10;
   width: 200px;
-  height: calc(100% - 70px);
+  height: 100%;
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
   background-color: #FFF;

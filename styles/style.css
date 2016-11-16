@@ -10,7 +10,6 @@
 
 body {
   height: 100%;
-  padding-top: 50px;
 }
 
 li {
@@ -28,17 +27,26 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
+button {
+  border: 0;
+  outline: 0;
+  background: none;
+}
+
 .noselect {
   -webkit-user-select: none;
+}
+
+.burger {
+  top: 20px;
+  left: 10px;
+  position: absolute;
 }
 
 .button {
   margin: 0 10px 0 10px;
   height: 24px;
   cursor: pointer;
-  border: 0;
-  outline: 0;
-  background: none;
   filter: grayscale(1);
 }
 
@@ -46,43 +54,14 @@ p {
   filter: grayscale(0);
 }
 
-header {
-  position: fixed;
-  margin-top: -50px;
-  z-index: 10;
-  width: 100%;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  background-color: #FFF;
-}
-
-header .logo {
-  width: 50px;
-  justify-content: space-around;
-  display: flex;
-  cursor: pointer;
-  filter: grayscale(1);
-  transition-duration: 0.3s;
-}
-
-header .logo:hover {
-  filter: grayscale(0);
-}
-
-header .logo-img {
-  height: 30px;
-}
-
 .sidebar {
-  overflow-y: scroll;
   position: fixed;
   padding: 15px 0 20px 20px;
   transition-duration: 0.5s;
   transform: translateX(-275px);
   z-index: 10;
   width: 200px;
-  height: calc(100% - 70px);
+  height: 100%;
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
   background-color: #FFF;
@@ -152,9 +131,30 @@ header .logo-img {
   background-position: bottom;
 }
 
-.main-image h1 {
-  padding: 50px 0 0 50px;
+.main-image div {
+  position: absolute;
+  top: 100px;
+  left: 75px;
+  display: flex;
+  width: 400px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.main-image p {
   color: #FFF;
-  font-family: 'Roboto', sans-serif;
-  font-size: 80px;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.find {
+  cursor: pointer;
+  height: 40px;
+  width: 140px;
+  background-color: #FFC107;
+  color: #FFF;
+  font: bold normal 18px sans-serif;
+  text-transform: uppercase;
+  border-radius: 2px;
+  box-shadow: 1px 1px 0 1px #FF6F00;
 }
