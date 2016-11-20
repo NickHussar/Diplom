@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="199.13" height="275" viewBox="0 0 199.13 275">
+  <defs>
+    <linearGradient id="a" data-name="Безымянный градиент" x1="-318.82" y1="163.505" x2="-259.03" y2="163.505" gradientTransform="matrix(-1, 0, 0, 1, -259.03, 77.12)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#80cbc4"/>
+      <stop offset="1" stop-color="#4db6ac"/>
+    </linearGradient>
+    <linearGradient id="b" data-name="Безымянный градиент 2" x1="-333.55" y1="70.625" x2="-273.76" y2="70.625" gradientTransform="translate(-273.76 242.5) rotate(180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4db6ac"/>
+      <stop offset="1" stop-color="#26a69a"/>
+    </linearGradient>
+    <linearGradient id="c" data-name="Безымянный градиент 3" x1="8.14" y1="128.09497" x2="67.93" y2="128.09497" gradientTransform="translate(-8.14 43.78003)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#26a69a"/>
+      <stop offset="1" stop-color="#009688"/>
+    </linearGradient>
+    <linearGradient id="d" data-name="Безымянный градиент 4" x1="47.2" y1="72.7" x2="-12.59" y2="72.7" gradientTransform="matrix(1, 0, 0, -1, 12.59, 175.83)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#009688"/>
+      <stop offset="1" stop-color="#00897b"/>
+    </linearGradient>
+    <linearGradient id="e" data-name="Безымянный градиент 5" x1="-242.12" y1="68.84997" x2="-301.91" y2="68.84997" gradientTransform="matrix(-1, 0, 0, 1, -242.12, 34.28003)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00897b"/>
+      <stop offset="1" stop-color="#00796b"/>
+    </linearGradient>
+    <linearGradient id="f" data-name="Безымянный градиент 6" x1="-343.37" y1="66.275" x2="-283.58" y2="66.275" gradientTransform="translate(-283.58 100.66) rotate(180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00796b"/>
+      <stop offset="1" stop-color="#00695c"/>
+    </linearGradient>
+    <linearGradient id="g" data-name="Безымянный градиент 35" x1="-358.08" y1="72.7" x2="-417.87001" y2="72.7" gradientTransform="translate(-218.74001 175.83) rotate(180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffc107"/>
+      <stop offset="1" stop-color="#ffb300"/>
+    </linearGradient>
+    <linearGradient id="h" data-name="Безымянный градиент 32" x1="163.17001" y1="68.84997" x2="103.38" y2="68.84997" gradientTransform="translate(35.96 34.28003)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffb300"/>
+      <stop offset="1" stop-color="#ffa000"/>
+    </linearGradient>
+    <linearGradient id="i" data-name="Безымянный градиент 9" x1="-382.34999" y1="101.755" x2="-322.55" y2="101.755" gradientTransform="matrix(-1, 0, 0, 1, -262.75999, 70.12)" xlink:href="#b"/>
+    <linearGradient id="j" data-name="Безымянный градиент 10" x1="56.93" y1="96.955" x2="116.73" y2="96.955" gradientTransform="matrix(1, 0, 0, -1, 2.86, 268.83)" xlink:href="#c"/>
+    <linearGradient id="k" data-name="Безымянный градиент 11" x1="-365.33" y1="-12.06501" x2="-305.53001" y2="-12.06501" gradientTransform="matrix(-1, 0, 0, 1, -245.74001, 46.45001)" xlink:href="#f"/>
+    <linearGradient id="l" data-name="Безымянный градиент 12" x1="14.95" y1="91.275" x2="74.75" y2="91.275" gradientTransform="matrix(1, 0, 0, -1, 44.84, 125.66)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00695c"/>
+      <stop offset="1" stop-color="#004d40"/>
+    </linearGradient>
+    <linearGradient id="m" data-name="Безымянный градиент 39" x1="-122.47" y1="304.425" x2="-53.70999" y2="304.425" gradientTransform="matrix(0, 1, 1, 0, -135.19, 259.97)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd54f"/>
+      <stop offset="1" stop-color="#ffca28"/>
+    </linearGradient>
+    <linearGradient id="n" data-name="Безымянный градиент 26" x1="-211.11001" y1="266.58497" x2="-142.35001" y2="266.58497" gradientTransform="translate(-97.34998 -142.35001) rotate(-90)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff8f00"/>
+      <stop offset="1" stop-color="#ff6f00"/>
+    </linearGradient>
+  </defs>
+  <title>ic_logo_v2</title>
+  <g>
+    <polygon points="59.79 275 59.79 206.25 0 206.25 59.79 275" fill="url(#a)"/>
+    <polygon points="59.79 137.5 59.79 206.25 0 206.25 59.79 137.5" fill="url(#b)"/>
+    <polygon points="0 206.25 0 137.5 59.79 137.5 0 206.25" fill="url(#c)"/>
+    <polygon points="0 68.76 0 137.5 59.79 137.5 0 68.76" fill="url(#d)"/>
+    <polygon points="59.79 137.5 59.79 68.76 0 68.76 59.79 137.5" fill="url(#e)"/>
+    <polygon points="59.79 0.01 59.79 68.76 0 68.76 59.79 0.01" fill="url(#f)"/>
+    <polygon points="199.13 68.76 199.13 137.5 139.34 137.5 199.13 68.76" fill="url(#g)"/>
+    <polygon points="139.34 137.5 139.34 68.76 199.13 68.76 139.34 137.5" fill="url(#h)"/>
+    <polygon points="119.59 206.25 119.59 137.5 59.79 137.5 119.59 206.25" fill="url(#i)"/>
+    <polygon points="59.79 137.5 59.79 206.25 119.59 206.25 59.79 137.5" fill="url(#j)"/>
+    <polygon points="119.59 68.76 119.59 0.01 59.79 0.01 119.59 68.76" fill="url(#k)"/>
+    <polygon points="59.79 0.01 59.79 68.76 119.59 68.76 59.79 0.01" fill="url(#l)"/>
+    <path d="M139.34,137.5v68.76c15.85,0,31.07-7.25,42.28-20.14s17.51-30.39,17.51-48.62Z" fill="url(#m)"/>
+    <path d="M139.34,68.76V0c15.85,0,31.07,7.25,42.28,20.14s17.51,30.39,17.51,48.62Z" fill="url(#n)"/>
+  </g>
+</svg>

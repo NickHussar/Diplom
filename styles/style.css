@@ -10,6 +10,8 @@
 
 body {
   height: 100%;
+  cursor: default;
+  background-color: #EEEEEE;
 }
 
 li {
@@ -22,9 +24,20 @@ h1 {
   font-size: 80px;
 }
 
+h2 {
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+}
+
 p {
   color: #000;
   font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 button {
@@ -44,19 +57,16 @@ button {
 }
 
 .button {
-  margin: 0 10px 0 10px;
+  margin: 0 10px;
   height: 24px;
   cursor: pointer;
-  filter: grayscale(1);
-}
-
-.button-active {
-  filter: grayscale(0);
 }
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
   position: fixed;
-  padding: 15px 0 20px 20px;
+  padding: 75px 0 20px 20px;
   transition-duration: 0.5s;
   transform: translateX(-275px);
   z-index: 10;
@@ -80,6 +90,7 @@ button {
 .sidebar .sb-h {
   color: #009688;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .sidebar ul li {
@@ -118,7 +129,7 @@ button {
 }
 
 .content {
-  height: 2000px;
+  height: 100%;
   width: 100%;
   background-color: #EEEEEE;
 }
@@ -129,6 +140,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .main-image div {
@@ -144,17 +156,71 @@ button {
 .main-image p {
   color: #FFF;
   font-size: 20px;
-  margin-bottom: 25px;
 }
 
 .find {
+  margin-top: 25px;
   cursor: pointer;
   height: 40px;
   width: 140px;
-  background-color: #FFC107;
+  background-color: #FFA000;
   color: #FFF;
   font: bold normal 18px sans-serif;
   text-transform: uppercase;
-  border-radius: 2px;
-  box-shadow: 1px 1px 0 1px #FF6F00;
+  border-radius: 3px;
+  box-shadow: 0 3px 0 #F57C00;
+}
+
+.or {
+  color: #F57C00;
+  font-size: 30px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.other {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.other div {
+  background-image: url(../images/tablet.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  padding: 20px 20px 20px 30px;
+  height: 400px;
+  width: 40%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+.other div:nth-child(2) {
+  background-image: url(../images/watch.png);
+}
+
+footer {
+  background-color: #757575;
+  height: 120px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px 0;
+  position: absolute;
+}
+
+footer div {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+footer div ul li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #FFF;
+  margin: 10px 0;
 }

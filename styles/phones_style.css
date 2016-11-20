@@ -29,8 +29,9 @@ h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
+
 p {
-  color: #000;
+  color: #757575;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -38,6 +39,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+label {
+  color: #757575;
+}
+
 .noselect {
   -webkit-user-select: none;
 }
@@ -53,6 +59,7 @@ a {
 .button-active {
   filter: grayscale(0);
 }
+
 header {
   position: fixed;
   margin-top: -50px;
@@ -113,7 +120,7 @@ header .logo-img {
 }
 
 .sidebar ul li {
-  margin: 10px 0 10px -10px;
+  margin: 10px 0 10px -22px;
 }
 
 .sidebar ul li input[type="checkbox"] {
@@ -126,11 +133,22 @@ header .logo-img {
   clear: none;
   padding: 5px 0 5px 30px;
   cursor: pointer;
-  background: url(../images/checkbox.png) left center no-repeat;
+  background: url(../images/ic_check_box_blank.svg) left center no-repeat;
 }
 
 .sidebar ul li input[type="checkbox"]:checked + label {
-  background-image: url(../images/checkbox_checked.png);
+  background-image: url(../images/ic_check_box.svg);
+}
+
+.sidebar [id*=slider-] {
+  margin: 10px 25px 15px 0;
+}
+
+.sidebar input[type=text] {
+  border: 0;
+  color: #FFA000;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .grey {
@@ -182,7 +200,6 @@ header .logo-img {
   justify-content: center;
 }
 .element-column {
-  cursor: pointer;
   background-color: #FFF;
   display: flex;
   justify-content: flex-start;
@@ -218,14 +235,21 @@ header .logo-img {
 .element-column img {
   display: block;
   height: 150px;
+  cursor: pointer;
+  margin-right: 30px;
 }
 
+.element-row .description {
+  margin: 0 auto;
+}
 footer {
   background-color: #757575;
   height: 120px;
   width: 100%;
   margin-top: 20px;
   padding: 20px 0;
+  position: absolute;
+  bottom: 0;
 }
 
 footer div {
